@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+}
+.card{
+    width: 250px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Apply transition to all changing properties over 0.3 seconds with ease-in-out timing */
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  /* Changes on hover */
+  transform: translateY(20px); /* Moves the card slightly up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow */
+  background-color: #e0e0e0; /* Changes background color */
+}
+img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* 維持原尺寸等比例縮放 */
+}
+.card-title{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: block; /*把超連結行內元素轉成區塊元素，才能設定寬高。如果本身是一個區塊就不需這麼多此一舉*/
+    text-align: center;
+}
+.card-text{
+    margin-bottom: 20px;
+}
+.card-body{
+    padding-bottom: 30px; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
