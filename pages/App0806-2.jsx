@@ -65,6 +65,7 @@ const App = () => {
                     arrPhotos.map((photo) => {
                         return (
                             <Card
+                                key={photo.id}
                                 imgURL={photo.imgURL}
                                 title={photo.title}
                                 desc={photo.desc}
