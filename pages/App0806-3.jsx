@@ -63,9 +63,6 @@ const App = () => {
 
             }
 
-
-
-
             {/* 方法2：呼叫員工元件，使用物件資料*/}
             {/* 
             <Employee name={employee.emp1.name} age={employee.emp1.age} />
