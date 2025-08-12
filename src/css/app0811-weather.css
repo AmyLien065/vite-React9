@@ -5,7 +5,7 @@
 
 .cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -18,14 +18,14 @@
     padding: 10px;
 }
 
-.card.header{
+.card .header{
     font-size: 24px;
-    border-bottom: 1px dashed #333;
+    border-bottom: 1px dashed #f08d8d;
     padding-bottom: 5px;
     margin-bottom: 5px;
 }
 
-.card.body{
+.card .body{
     display: flex;
     justify-content: space-between;
 }

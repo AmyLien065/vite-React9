@@ -7,7 +7,7 @@ import { createRoot } from 'react-dom/client'
 // import App from '../pages/App0806-1'
 // import App from '../pages/App0806-2'
 // import App from '../pages/App0806-3'
-import App from '../pages/App0811-weather'
+import App from '../pages/App0812-weather'
 
 createRoot(document.getElementById('root')).render(
   // 嚴謹模式，所以呈現內容會跳兩次，如果不要跳兩次就把嚴謹模式註解掉
