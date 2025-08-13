@@ -1,68 +1,14 @@
 // import Icon from '../src/images/weatherIcon'
-import '../src/css/app0811-weather.css'
+import '../src/css/app0811-weather.css';
 import { FaUmbrella } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 import axios from "axios";
 
-// const Weather = ({ city, day, time, status }) => {
-//     return (
-//         <div className='weather'>
-//             <h2>城市：{city}</h2>
-//             <p>日期：{day}</p>
-//             <p>時間：{time}</p>
-//             <p>降雨機率：{status}</p>
-//         </div>
-//     )
-// }
-
-// const arrWeather = [
-//     {
-//         id: 1,
-//         city: "台北市",
-//         day: "11日",
-//         time: "上午6:00~下午6:00",
-//         status: "晴午後短暫雷陣雨",
-//     }, {
-//         id: 2,
-//         city: "台北市",
-//         day: "11日",
-//         time: "下午6:00~上午6:00",
-//         status: "多雲短暫陣雨",
-//     }, {
-//         id: 3,
-//         city: "台北市",
-//         day: "12日",
-//         time: "上午6:00~下午6:00",
-//         status: "多雲午後短暫雷陣雨",
-//     },
-
-// ]
-
-// const App = () => {
-//     return (
-//         <div>
-//             <h2>台北市</h2>
-
-//             {
-//                 arrWeather.map((Weather) => {
-//                     return (
-//                         <Weather city={Weather.city} ></Weather>
-
-//                     )
-//                 }
-//                 )
-//             }
-//             <div>11日</div>
-//             <div>11日</div>
-//             <div>12日</div>
-//         </div>
-//     )
-// }
 
 const App = () => {
     // 建立一個react變數，使用useState Hook
     // 存放各縣市資料
-    // const[變數名稱, 更改變數名稱的方法] = useState(預設值);
+    // const[變數名稱, 更改變數名稱的方法] = useState([預設值]);
     const [citys, setCitys] = useState([]);
 
     // useEffect Hook => 渲染後，只呼叫一次json
