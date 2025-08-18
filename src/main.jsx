@@ -7,7 +7,8 @@ import { createRoot } from 'react-dom/client'
 // import App from '../pages/App0806-1'
 // import App from '../pages/App0806-2'
 // import App from '../pages/App0806-3'
-import App from './MyApp'
+import App from '../pages/App0818d.jsx'
+// import App from './MyApp'
 import { HashRouter } from 'react-router-dom'
 
 
