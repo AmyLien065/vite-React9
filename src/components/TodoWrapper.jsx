@@ -11,10 +11,33 @@ const TodoWrapper = () => {
 
     const [arrTodos, setArrTodos] = useState(
         [
-            { content: '繳納停車費0820', id: Math.random() },
-            { content: '對5-6月統一發票', id: Math.random() },
+            { content: '繳納停車費0820', id: Math.random(), isCompleted: false },
+            { content: '對5-6月統一發票', id: Math.random(), isCompleted: false },
         ]
-    )
+    );
+
+    // 建立刪除todo
+    // 傳入被刪除的todo.id
+    const delTodo = (id) => {
+        setArrTodos(arrTodos.filter((todo) => {
+            //使用filter方法，保留不是被刪除的id
+            return todo.id !== id
+        }))
+    }
+
+    //建立切換isCompleted屬性函式
+    const toggleCompleted = (id) => {
+        // 檢查被點擊項目的id是否跟陣列中的id一樣
+        // yes => 1.取出todo 2.將isCompleted屬性值反向（NOT）
+        // no => todo不變
+
+        setArrTodos(arrTodos.map((todo) => {
+            return todo.id === id
+                ? { ...todo, isCompleted: !todo.isCompleted }
+                : todo
+        }))
+    }
+
     return (
         <div className='wrapper'>
             <h1>待辦事項</h1>
@@ -34,7 +57,7 @@ const TodoWrapper = () => {
 
             {
                 arrTodos.map((todo) => {
-                    return <Todo todo={todo.content} key={todo.id} />
+                    return <Todo todo={todo} key={todo.id} delTodo={delTodo} toggleCompleted={toggleCompleted} />
                 })
             }
 
