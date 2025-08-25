@@ -1,4 +1,4 @@
-import TodoWrapper from '../src/components/TodoWrapper'
+import TodoWrapper from '../components/TodoWrapper'
 import '../src/css/app0820.css'
 
 const App0820 = () => {
