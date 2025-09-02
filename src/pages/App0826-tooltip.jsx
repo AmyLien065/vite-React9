@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import { useEffect } from 'react'
 import '../css/app0826c.css'
-//import hinada from '../images/hinada-p1.jpeg' // 好的我有障礙，路徑迷路了
+//import hinada from '../images/hinada-p1.jpeg' // public裡面的圖直接點斜線下去找就好了，不用import
 import reactLogo from '../assets/react.svg'
 
 const App = () => {
@@ -75,6 +75,7 @@ const App = () => {
                 consequatur dolores.
                 <a href="#">
                     <img src={reactLogo} alt="" />
+                    <img src='../images/hinada-p1.jpeg' alt="" />
                     <span className='ttpShow'>圖片說明xxx</span>
                 </a>
 
