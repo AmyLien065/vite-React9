@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { HashRouter } from 'react-router-dom'
 // import './index.css'
 // import App from './App.jsx'
 // import App from './App0805-1'
@@ -7,9 +8,10 @@ import { createRoot } from 'react-dom/client'
 // import App from '../pages/App0806-1'
 // import App from '../pages/App0806-2'
 // import App from '../pages/App0806-3'
-import App from './pages/App0902a.jsx'
 // import App from './MyApp'
-import { HashRouter } from 'react-router-dom'
+import App from './pages/App0902b-useContext.jsx'
+
+
 
 
 createRoot(document.getElementById('root')).render(
