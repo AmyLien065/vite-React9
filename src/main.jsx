@@ -9,16 +9,16 @@ import { HashRouter } from 'react-router-dom'
 // import App from '../pages/App0806-2'
 // import App from '../pages/App0806-3'
 // import App from './MyApp'
-import App from './pages/App0902b-useContext.jsx'
+import App from './pages/App0903-useRef-6.jsx'
 
 
 
 
 createRoot(document.getElementById('root')).render(
   // 嚴謹模式，所以呈現內容會跳兩次，如果不要跳兩次就把嚴謹模式註解掉
-  <StrictMode>
+  //<StrictMode>
     <HashRouter>
     <App />
     </HashRouter>
-  </StrictMode>,
+  //</StrictMode>,
 )
