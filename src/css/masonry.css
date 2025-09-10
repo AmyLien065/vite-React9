@@ -1,0 +1,25 @@
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  /* background: grey; */
+  margin-bottom: 30px;
+}
+
+.my-masonry-grid img{
+    width: 100%;
+    height: auto;
+    display: block;   /* 移除行內元素造成的縫隙 */
+  /* 如果想裁成固定高，可改：height: 240px; object-fit: cover; */
+
+}
